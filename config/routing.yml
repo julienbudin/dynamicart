@@ -1,0 +1,47 @@
+cour_affiche:
+    path:    /cours/
+    defaults: { _controller: CourBundle:Cour:affiche }
+
+cour_ajout:
+    path:    /cours/ajout
+    defaults: { _controller: CourBundle:Cour:ajout }
+
+chapitre_affiche:
+    path:    /chapitre/
+    defaults: { _controller: ChapitreBundle:Chapitre:affiche }
+
+chapitre_ajout:
+    path:    /chapitre/ajout
+    defaults: { _controller: ChapitreBundle:Chapitre:ajout}
+
+chapitre:
+    resource: "@ChapitreBundle/Controller/"
+    type:     annotation
+    prefix:   /chapitre
+
+reponse:
+    resource: "@ReponseBundle/Controller/"
+    type:     annotation
+    prefix:   /reponse
+
+quizz:
+    resource: "@QuizzBundle/Controller/"
+    type:     annotation
+    prefix:   /quiz
+
+question:
+    resource: "@QuestionBundle/Controller/"
+    type:     annotation
+    prefix:   /question
+
+cour:
+    resource: "@CourBundle/Controller/"
+    type:     annotation
+    prefix:   /cours
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
