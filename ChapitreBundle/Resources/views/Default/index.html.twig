@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    {% for chapitre in chapitre %}
+        <br>
+        {{ chapitre.nom }}<br>
+        {{ chapitre.contenu }}<br>
+        {{ chapitre.document }}<br>
+
+
+    {% endfor %}
+
+{% endblock %}

@@ -1,0 +1,4 @@
+services:
+#    chapitre.example:
+#        class: ChapitreBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]
